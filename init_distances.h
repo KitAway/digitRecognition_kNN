@@ -1,3 +1,3 @@
 #pragma once
 #include "para.h"
-void init_distances(bool a[1024],bool b[N_TRAIN][1024],int distance[N_TRAIN]);
+void init_distances(bool a[IMAGE_SIZE],bool b[N_TRAIN][IMAGE_SIZE],int distance[N_TRAIN]);
