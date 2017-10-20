@@ -1,16 +1,21 @@
-#pragma once
+#ifndef __PARA_H_
+#define __PARA_H_
 #include <stdio.h>
 #include <stdlib.h>
 #define bool char
 #define true 1
 #define false 0
 
-#define K 5
+#define K 8
 
-#define M_TRAIN 20
-#define M_TEST 20
+#define M_TRAIN 150
+#define M_TEST 80
 
-#define N_TRAIN 200  //10*N_TRAIN
-#define N_TEST 200   //10*N_TEST
+#define IMAGE_EDGE 32
+#define IMAGE_SIZE (IMAGE_EDGE*IMAGE_EDGE)
+#define NUM_CLASS 10
+#define N_TRAIN (NUM_CLASS * M_TRAIN)
+#define N_TEST (NUM_CLASS * M_TEST)
 
-#define N_DIST 200
+#define N_DIST N_TRAIN
+#endif
